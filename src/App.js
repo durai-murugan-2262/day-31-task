@@ -58,9 +58,9 @@ let [teach,setTeach]=useState([
           <Route path='/' element={<Home/>}/>
           <Route path='create-student' element={<CreateStudent />}/>
           <Route path='create-teacher' element={<CreateTeacher />}/>
-          <Route path='*' element={<Navigate to='/'/>}/>
           <Route path='edit-student/:id' element={<EditStudent/>}/>
           <Route path='edit-teacher/:id' element={<EditTeacher/>}/>
+          <Route path='*' element={<Navigate to='/'/>}/>
       </Routes>
       </CreateElament.Provider>
   </BrowserRouter>
