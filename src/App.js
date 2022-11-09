@@ -55,7 +55,7 @@ let [teach,setTeach]=useState([
   <Sidebar/> 
   <CreateElament.Provider value={{data,setData,teach,setTeach}}>   
     <Routes>
-          <Route path='home' element={<Home/>}/>
+          <Route path='/' element={<Home/>}/>
           <Route path='create-student' element={<CreateStudent />}/>
           <Route path='create-teacher' element={<CreateTeacher />}/>
           <Route path='*' element={<Navigate to='/home'/>}/>
